@@ -32,7 +32,7 @@ jobs:
           #7z a Kali-Linux.7z images/*.iso -mx1
   
       - name: Upload
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Kali-Linux
           path: images/*.iso
