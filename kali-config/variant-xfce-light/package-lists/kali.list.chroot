@@ -2,20 +2,33 @@
 ##
 ## $ ./build.sh --variant xfce-light
 
-## Live images always want these
+# Live image
+# You always want these:
 kali-linux-core
 kali-desktop-live
 
-## Graphical desktop
-##   For the complete list see: https://www.kali.org/docs/general-use/metapackages/
+# Graphical desktop
 kali-desktop-xfce
 
-## Metapackages
-##   You can customize the set of Kali metapackages (groups of tools) to install
-##   For the complete list see: https://www.kali.org/tools/kali-meta/
-#kali-linux-<selection>
-
-## Extra Kali packages/tools/applications
-##   For the complete list see: https://www.kali.org/tools/
-##                              https://pkg.kali.org/
+# Kali applications
 #<package>
+
+################
+build-essential
+libncurses5-dev
+libncursesw5-dev 
+zlib1g-dev
+gawk
+git
+gettext
+libssl-dev
+xsltproc
+rsync
+wget
+unzip
+python3
+python3-distutils
+open-vm-tools-desktop
+
+######sudo dpkg-reconfigure kali-grant-root
+kali-grant-root
